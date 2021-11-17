@@ -1,11 +1,11 @@
+import { NavigationContainer } from "@react-navigation/native";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
-import tw from "tailwind-rn";
+import StackNavigator from "./StackNavigator";
 
 export default function App() {
   return (
-    <View style={tw("flex-1 justify-center items-center")}>
-      <Text>Hello</Text>
-    </View>
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
   );
 }
